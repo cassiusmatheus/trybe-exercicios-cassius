@@ -8,6 +8,9 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;
+    list-style-type: none;
+    display: block;
+    margin-left: 50px;
   }
 
   .second {
@@ -16,6 +19,8 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    list-style-type: none;
+
   }
 
   .third {
@@ -24,4 +29,13 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    list-style-type: none;
+
   }
+  .second,.third{
+      display: inline-block;
+  }
+.podio{
+    width: 700px;
+    height: 250px;
+}
