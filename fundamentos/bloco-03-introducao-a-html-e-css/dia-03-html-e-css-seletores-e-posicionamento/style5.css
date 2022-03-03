@@ -24,23 +24,23 @@ div ul li:first-of-type, :nth-of-type(2),:nth-of-type(3) {
 .java{
     background-color: pink;   
 }
-div ul li a:first-of-type:hover{
+.sites ul li a:first-of-type:hover{
     color: orange;
     font-weight: bold ;
-}
-div ul:nth-child(2):hover{
+} 
+.sites ul li a:nth-of-type(2):hover{
     color: green;
     font-weight: bold;
 }
-div ul:nth-child(3):hover{
+.sites ul:nth-of-type(3):hover{
     color: black;
     font-weight: bold;
 }
-div ul:nth-child(3):hover{
+.sites ul:nth-of-type(4):hover{
     color: yellow;
     font-weight: bold;
 }
-div ul:nth-child(3):hover{
+.sites ul:nth-of-type(5):hover{
     color: green;
     font-weight: bold;
 }
