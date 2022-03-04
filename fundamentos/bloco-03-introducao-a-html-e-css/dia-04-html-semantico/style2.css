@@ -1,0 +1,9 @@
+.links-nav{
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+}
+.links-nav li {
+    display: inline-block;
+    width: 200px;
+}
