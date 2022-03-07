@@ -18,7 +18,7 @@ li {
 li em {
     font-weight: bold;
 }
-div ul li:first-of-type, :nth-of-type(2),:nth-of-type(3) {
+/* div ul li:first-of-type, :nth-of-type(2),:nth-of-type(3) { */
     color: blue;
 }
 .java{
