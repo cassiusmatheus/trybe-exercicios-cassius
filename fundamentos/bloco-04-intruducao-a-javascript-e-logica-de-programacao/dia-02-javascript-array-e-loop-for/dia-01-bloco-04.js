@@ -76,10 +76,19 @@
 
 // Questão 8: Utilizando o for, criar um array que vá de 1 a 25
 
+// let devCassius = []
+// for (let x = 0; x < 25 ; x+=1) {
+//     devCassius.push (x + 1)
+// } 
+// console.log (devCassius)
+
+// Questão 9: Criar um array onde os elementos sejam a divisão do array anterior por 2
 let devCassius = []
 for (let x = 0; x < 25 ; x+=1) {
-    devCassius.push (x + 1)
+    devCassius.push (x + 1)   
 } 
-console.log (devCassius)
-
-
+let segundoVetor = []
+for (let z=0; z < 25; z+=1) {
+segundoVetor.push ((devCassius[z] / 2))
+}
+console.log (segundoVetor)
