@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main id="paiDoPai">
-        <section id="pai">
-          <section id="primeiroFilho"></section>
-          <section id="elementoOndeVoceEsta">
-            <section id="primeiroFilhoDoFilho"></section>
-            <section id="segundoEUltimoFilhoDoFilho"></section>
-          </section>
-          Atenção!
-          <section id="terceiroFilho"></section>
-          <section id="quartoEUltimoFilho"></section>
+      <section id="pai">
+        <section id="primeiroFilho"></section>
+        <section id="elementoOndeVoceEsta">
+          <section id="primeiroFilhoDoFilho"></section>
+          <section id="segundoEUltimoFilhoDoFilho"></section>
         </section>
-      </main>
-      <script>
-        document.getElementById('elementoOndeVoceEsta').parentNode.style.backgroundColor = 'pink';
-        document.getElementById('primeiroFilhoDoFilho').innerText = 'Cássius será um GRANDE DEV';
-        console.log(document.getElementById('primeiroFilhoDoFilho').parentNode.firstElementChild);
-        console.log(document.getElementById('elementoOndeVoceEsta').firstElementChild)
-        console.log(document.getElementById('elementoOndeVoceEsta').nextSibling)
-        console.log(document.getElementById('elementoOndeVoceEsta').nextSibling.nextSibling)
-        console.log(document.getElementById('pai').children[2])
-       
-      
-      </script>
-</body>
+        Atenção!
+        <section id="terceiroFilho"></section>
+        <section id="quartoEUltimoFilho"></section>
+      </section>
+    </main>
+    <script>
+      document.getElementById(
+        "elementoOndeVoceEsta"
+      ).parentNode.style.backgroundColor = "pink";
+      document.getElementById("primeiroFilhoDoFilho").innerText =
+        "Cássius será um GRANDE DEV";
+      // console.log(document.getElementById('primeiroFilhoDoFilho').parentNode.firstElementChild);
+      // console.log(document.getElementById('elementoOndeVoceEsta').firstElementChild)
+      // console.log(document.getElementById('elementoOndeVoceEsta').nextSibling)
+      // console.log(document.getElementById('elementoOndeVoceEsta').nextSibling.nextSibling)
+      // console.log(document.getElementById('pai').children[2])
+      let novo = document.createElement("section");
+      novo.innerText = "acabei de criar";
+      document.getElementById("pai").appendChild(novo);
+      let x = document.createElement("div");
+      x.classList = "classeA";
+      document.getElementById("elementoOndeVoceEsta").appendChild(x);
+      let filhoDoFilhoDoFilhoDoFilhoAteOInfinito = document.createElement("a");
+      document
+        .getElementById("primeiroFilhoDoFilho")
+        .appendChild(filhoDoFilhoDoFilhoDoFilhoAteOInfinito);
+        console.log(filhoDoFilhoDoFilhoDoFilhoAteOInfinito.parentNode.parentNode.nextSibling.nextSibling) 
+    </script>
+  </body>
 </html>
